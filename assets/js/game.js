@@ -1,14 +1,22 @@
 var playerName = window.prompt("What is your Robot's name?")
-console.log(playerName);
+var playerHealth = 100;
+var playerAttack = 10;
 
-var yourName = "Chris"
+var enemyName = "Roberto";
+var enemyHealth = 100;
+var enemyAttack = 10;
 
-console.log("This logs a string, good for leaving yourself a message");
-console.log(10 + 10);
-console.log("Our Robot's name is " + playerName);
-console.log(yourName);
-
-function fight() {
-    window.alert("The fight has begun");
+var fight = function() {
+    window.alert("Welcome to Robot Gladiator")
+    enemyHealth = enemyHealth - playerAttack ;
+    console.log(playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining");
+    
+    // Check enemy's Health
+    if (enemyHealth <= 0) {
+        window.alert(enemyName + " has died!")
+    } else {
+        window.alert(enemyName + " still has " + enemyHealth + " health left");
+    }
 }
-// fight();
+
+fight();
