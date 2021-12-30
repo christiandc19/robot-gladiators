@@ -1,12 +1,17 @@
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames[1]);
+
 var playerName = window.prompt("What is your Robot's name?")
 var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
-var enemyName = "Roberto";
-var enemyHealth = 100;
+
+
+/*var enemyHealth = 100;
 var enemyAttack = 10;
 var enemyMoney = 10;
+
 
 var fight = function() {
     window.alert("Welcome to Robot Gladiator, " + playerName);
@@ -34,7 +39,9 @@ var fight = function() {
                 playerMoney = playerMoney - 2;
             }
     } else {
-            fight();
-    }
+        fight();
+    } else {
+        window.alert("You need to pick a valid option. Try again!");
+      }
 }
-fight();
+fight(); */
